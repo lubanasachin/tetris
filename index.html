@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tetris</title>
+        <link rel='stylesheet' href='style.css' />
+    </head>
+    <body>
+        <div class="container">
+            <canvas width='400' height='600'></canvas>
+            <div class="instDiv">
+                <div class="instHead">Instructions</div>
+
+                <div class='instData'>
+                        <p>"a": move left</p>
+                        <p>"d": move right</p>
+                        <p>"w": rotate</p>
+                        <p>"down arrow": move down</p>
+                </div>
+                <div class='callToActions'>
+                    <button id="startButton" onclick="start(1)">Start</button>
+                    <button id="restartButton" onclick="start(2)">Re-Start</button>
+                    <button id="playagain" onclick="start(3)">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src='js/tetris.js'></script>
